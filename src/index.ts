@@ -1,3 +1,5 @@
 
-export * from "./DReadBuf";
-export * from "./DWriteBuf";
+import DReadBuf from "./DReadBuf";
+import DWriteBuf from "./DWriteBuf";
+
+export {DReadBuf,DWriteBuf};

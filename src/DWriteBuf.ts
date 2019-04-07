@@ -33,6 +33,10 @@ export default class DWriteBuf{
         });
     }
 
+    writeJSON(v:any){
+        this.writeString(JSON.stringify(v));
+    }
+
     
     writeString(v:string){
         this.arr.push({

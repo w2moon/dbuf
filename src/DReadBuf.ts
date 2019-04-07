@@ -24,6 +24,19 @@ export default class DReadBuf{
         return v;
     }
 
+    readJSON(){
+        let v = this.readString();
+        if(!v){
+            return;
+        }
+        try{
+            v = JSON.parse(v);
+        }
+        catch(e){
+            console.log(e);
+        }
+        return v;
+    }
     
     readString(){
         let len = this.readInt32();
