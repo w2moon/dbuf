@@ -6,6 +6,9 @@ export default class DReadBuf{
         this.buf = buf;
         this.offset = 0;
     }
+    seek(offset:number){
+        this.offset = offset;
+    }
     readBool(){
         let v = this.buf.readInt8(this.offset)?true:false;
         this.offset += 1;

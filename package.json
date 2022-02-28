@@ -1,6 +1,6 @@
 {
-  "name": "dbuf",
-  "version": "1.0.3",
+  "name": "@gswl/dbuf",
+  "version": "1.0.5",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
